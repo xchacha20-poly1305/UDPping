@@ -29,8 +29,8 @@ Set up a udp echo server at the host you want to ping.
 
 There are many ways of doing this, my favourite way is:
 
-```
-socat -v UDP-LISTEN:4000,fork PIPE
+```shell
+socat -v udp4-listen:4000,fork PIPE
 ```
 
 Now a echo server is listening at port 4000. 
